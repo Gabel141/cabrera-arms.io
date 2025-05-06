@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CABRERA ARMS: CONTACT PAGE</title>
+        <link rel="stylesheet" href="../mainStyleSheet.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+
+            label {
+                font-size: 30px;
+            }
+
+            h1 {
+                font-size: 100px;
+                padding: 2%;
+                margin: 0 0 20px 0;
+                font-family: 'Times New Roman', Times, serif;
+                background-color: rgb(255, 217, 168);
+                text-align: center;
+            }
+            .container {
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+
+            @media screen and (max-width: 800px) {
+                h1 {
+                    font-size: 50px;
+                }
+            }
+
+
+        </style>
+    </head>
+
+    <body id="start">
+
+
+      <div class="navigation"> <!-- Navbar -->
+        <nav>
+            <div class="navBarFlex">
+
+                        <div class="navBarImageBar"><a href="../index.html"><img src="../images/CABRERA-HUMCOMLOGO.png" class="navBarImage"></a></div>
+                
+                        <div class="navBar" id="naviBar">
+
+                          <div class="navBarItems" id="navItems"><a href="../index.html"><div class="navBarItems"><h3>HOME</h3></div></a></div>
+                          <div class="navBarItems" id="navItems"><a href="articles.html"><div class="navBarItems"><h3>ARTICLES</h3></div></a></div>
+                          <div class="navBarItems" id="navItems"><a href="aboutus.html"><div class="navBarItems"><h3>ABOUT</h3></div></a></div>
+                          <div class="navBarItems" id="navItems"><a href="contactus.html"><div class="navBarItems"><h3>CONTACT</h3></div></a></div>
+  
+                        </div>
+
+                        <div class="navBarMenu">
+
+                            <a href="javascript:void(0);" class="icon" onclick="navBarMenu()">
+                                <i class="fa fa-bars"></i>
+                            </a>
+
+                        </div>
+                        <div class="navBarEmpty"></div>
+
+            </div>
+        </nav>
+    </div>
+
+            <h1>CONTACT US</h1>
+
+            <div class="container" id="contactform">
+
+                <form action="#action_page.php" id="contactform">
+
+                <div class="row">
+                  <div class="col-25">
+                    <label for="fname">Full Name</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="fname" name="fullname" placeholder="Your name.. (LAST NAME, FIRST NAME)">
+                    <p id="nameError" class="errorMessage"></p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-25">
+                    <label for="email">Email</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="email" id="email" name="email" placeholder="Your email..">
+                    <p id="emailError" class="errorMessage"></p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-25">
+                    <label for="subject">Subject</label>
+                  </div>
+                  <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    <p id="messageError" class="errorMessage"></p>
+                  </div>
+                </div>
+
+                <br>
+                <div class="row">
+                  <input type="submit" value="Submit" onclick="return validateForm()" formaction="action_page.php">
+                  <p id="formMessage" class="successMessage"></p>
+                </div>
+                </form>
+
+            </div>
+              
+              <button onclick="goToTop()" id="topButton" title="Go to top">Top</button>
+
+              <footer style="margin-top: 10%;">
+
+                <div class="footerFlex">
+
+                    <div class="footerContact">
+                        <h4>CONTACT US</h4>
+                        <div>cabreragabelethan@gmail.com</div>
+                        <div>+639692074272</div>
+                    </div>
+    
+                    <div class="footerEmpty">
+                    </div>
+                    
+                </div>
+    
+            </footer>
+    
+            <div class="footerSticky">
+
+              <p>&#169Cabrera2025</p>
+  
+          </div>
+
+          <script src="scripts/mainScripts.js"></script>
+
+    </body>
+</html>

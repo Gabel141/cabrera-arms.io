@@ -1,0 +1,331 @@
+    * {
+    box-sizing: border-box;
+}
+
+    img.navigation {
+    width: 3.5vh;
+    display: inline-block;
+    }
+
+    body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .toggleButton {
+    border: 1px solid black;
+    background-color: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+.toggleButton h2 {
+    padding: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0;
+}
+
+.toggleButton:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+  /* NAVIGATION BAR 2.0 */
+
+        .navigation {
+          position: sticky;
+          top: 0;
+        }
+
+        .navBarFlex {
+
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          display: flex;
+          flex-direction: row;
+          align-items: stretch;
+          background-color: antiquewhite;
+          padding: 0.01rem;
+
+          }
+
+           .navBarMenu {
+
+              display: none;
+              color: black;
+            
+          }
+
+          .navBarItems {
+              flex: 5%;
+              padding: 10px;
+              font-size: 20px;
+              text-align: center;
+              align-self: center;
+              width: 100%;
+              height: 100%;
+          }
+
+          .navBarImageBar {
+              flex: 5%;
+              padding-left: 25px;
+              padding-top: 5px;
+              padding-right: 25px;
+              align-self: center;
+          }
+
+          .navBarImage {
+              height: 100px;
+          }
+
+          .navBarEmpty {
+              flex: 50%;
+          }
+
+          .navBarFlex h3 {
+              color: black;
+          }
+
+          .navBarFlex a {
+              text-decoration: none;
+          }
+
+          .navBarItems:hover{
+
+              background-color: white;
+              transition: .2s;
+
+
+          }
+
+          .navBar {
+
+              display: flex;
+
+          }
+
+          @media screen and (max-width: 800px) {
+
+              .navBarItems, .navBarEmpty {
+                  display: none;
+              }
+
+              .navBarMenu {
+                  display: flex;
+                  flex: 5%;
+                  padding: 10px;
+                  font-size: 40px;
+                  text-align: center;
+                  align-self: center;
+              }
+
+              .navBarMenu a {
+                  color: black;
+              }
+
+              .navBarMenu a:hover {
+                  color: white;
+              }
+
+              .navBarImageBar {
+
+                  flex: 95%;
+
+              }
+
+          }
+
+          @media screen and (max-width: 800px) {
+
+              .navBarFlex.responsive {
+
+                  flex-direction: column;
+
+              }
+              
+              .navBarFlex.responsive .navBarItems {
+
+                  display: flex;
+                  height: 100%;
+                  width: 100%;
+                  align-items: center;
+                  padding: 0 1rem;
+                  transition: .2s;
+
+              }
+
+              .navBarItems:hover {
+
+                  background-color: white;
+
+              }
+
+          }
+
+
+  /* NAVIGATION BAR 2.0 ENDS */
+
+  /* Top Button */
+
+  #topButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: whitesmoke;
+    color: black;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+
+  #topButton:hover {
+    color: #555;
+  }
+
+/* CONTACT US */
+
+input[type=text], input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: gray;
+}
+
+.container {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* CONTACT US */
+
+/* Footer */
+
+footer {
+  background-color: antiquewhite;
+}
+
+.footerFlex {
+
+  flex-direction: row;
+  display: flex;
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 50px;
+
+}
+
+.footerNav {
+
+  padding: 10px;
+  flex: 33%;
+  
+}
+
+.footerContact {
+
+  padding: 10px;
+  flex: 33%;
+
+}
+
+.footerEmpty {
+
+  flex: 33%;
+
+}
+
+.footerNav a {
+
+  text-decoration: none;
+  color: black;
+
+}
+
+.footerNav a:hover {
+  color: lightgray;
+}
+
+@media (max-width: 1000px) {
+  .footerNav .footerContact{
+    flex: 50%;
+  } 
+  .footerEmpty{
+    flex: 0%;
+  }
+}
+
+  /* Sticky footer */
+
+div.footerSticky {
+  position: sticky;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+}
+
+div.footerSticky p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+/* Footer Ends */
+
+

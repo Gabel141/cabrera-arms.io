@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CABRERA ARMS: ABOUT US</title>
+        <link rel="stylesheet" href="../mainStyleSheet.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+
+            .mainBody {
+
+                margin-left: 15%;
+                margin-right: 15%;
+                margin-bottom: 10%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+            }
+
+            .mainBodyText {
+                flex: 75%;
+                padding: 40px;
+                background-color:antiquewhite;
+            }
+
+            .mainBodyImage {
+                flex: 25%;
+                padding: 10px;
+            }
+
+            .face {
+                border-radius: 50%;
+                height: 300px;
+            }
+
+            h1 {
+                font-size: 100px;
+                padding: 2%;
+                margin: 0 0 20px 0;
+                font-family: 'Times New Roman', Times, serif;
+                background-color: rgb(255, 217, 168);
+            }
+
+            h2 {
+                font-size: 50px;
+            }
+
+            .mainBodyText p {
+                font-size: 30px;
+            }
+
+            @media screen and (max-width: 1000px) {
+                .mainBody {
+                    flex-direction: column;
+                }
+            }
+
+            @media screen and (max-width: 750px) {
+                h1 {
+                    font-size: 50px;
+                }
+            }
+
+        </style>
+    </head>
+
+    <body id="start">
+
+        <div class="navigation"> <!-- Navbar -->
+            <nav>
+                <div class="navBarFlex">
+
+                            <div class="navBarImageBar"><a href="../index.html"><img src="../images/CABRERA-HUMCOMLOGO.png" class="navBarImage"></a></div>
+                    
+                            <div class="navBar" id="naviBar">
+
+                                <div class="navBarItems" id="navItems"><a href="../index.html"><div class="navBarItems"><h3>HOME</h3></div></a></div>
+                                <div class="navBarItems" id="navItems"><a href="articles.html"><div class="navBarItems"><h3>ARTICLES</h3></div></a></div>
+                                <div class="navBarItems" id="navItems"><a href="aboutus.html"><div class="navBarItems"><h3>ABOUT</h3></div></a></div>
+                                <div class="navBarItems" id="navItems"><a href="contactus.html"><div class="navBarItems"><h3>CONTACT</h3></div></a></div>
+        
+                            </div>
+
+                            <div class="navBarMenu">
+
+                                <a href="javascript:void(0);" class="icon" onclick="navBarMenu()">
+                                    <i class="fa fa-bars"></i>
+                                </a>
+
+                            </div>
+                            <div class="navBarEmpty"></div>
+
+                </div>
+            </nav>
+        </div>
+
+            <h1 style="text-align: center;">ABOUT US</h1>
+
+        <div class="mainBody">
+
+            <div class="mainBodyText">
+
+                <h2>The Developer <button class="toggleButton" onclick="toggleDisplay('developerInfo')"><h2 id="expander1" title="Show/Hide Text">V</h2></button></h2>
+
+                <div id="developerInfo">
+
+                <p>Gabel Cabrera is a student within the University of Baguio, studying the course BSCS. He created this website
+                    not just to comply with his requirements, but to also develop his passion for programming, design, and other aspects
+                    in life. 
+                </p>
+
+                </div>
+
+                <h2>The Wesbite <button class="toggleButton" onclick="toggleDisplay('websiteInfo')"><h2 title="Show/Hide Text">V</h2></button></h2>
+
+                <div id="websiteInfo">
+
+                <p>The website was created due to the course requirements, with its theme and ideas selected by the devloper. Firearms and
+                    airsoft replicas were chosen due to Gabel's fascination with them and wishes to expand his knowledge further. It is 
+                    designed to hopefully become a reliable and credible source of information regarding those topics.
+                </p>
+
+                </div>
+
+            </div>
+        
+            <div class="mainBodyImage">
+
+                <img src="../images/gabel face.jpg" alt="Gabel Cabrera's Facial Appearance" class="face" title="Gabel Cabrera">
+
+            </div>
+
+        </div>
+
+        <button onclick="goToTop()" id="topButton" title="Go to top">Top</button>
+
+        <footer>
+
+            <div class="footerFlex">
+
+                <div class="footerContact">
+                    <h4>CONTACT US</h4>
+                    <div>cabreragabelethan@gmail.com</div>
+                    <div>+639692074272</div>
+                </div>
+
+                <div class="footerEmpty">
+                </div>
+                
+            </div>
+
+        </footer>
+
+        <div class="footerSticky">
+
+            <p>&#169Cabrera2025</p>
+
+        </div>
+
+        <script src="scripts/mainScripts.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,35 @@
+.container {
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "content content content";
+    grid-template-columns: 1fr 9fr;
+    padding: 0;
+}
+
+.container > div {
+    padding: 10px;
+    background-color: antiquewhite;
+}
+
+.container > div.header {
+    grid-area: header;
+    text-align: center;
+    background-color: rgb(255, 217, 168);
+    font-size: larger;
+}
+
+.container > div.content {
+    grid-area: content;
+    text-align: center;
+    font-size: larger;
+}
+.container > div.content p {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.container > div.blank {
+    grid-area: blank;
+    background-color: antiquewhite;
+}
+
